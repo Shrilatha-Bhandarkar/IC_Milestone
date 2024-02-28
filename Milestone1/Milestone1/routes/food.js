@@ -17,6 +17,7 @@ router.get('/:id', (req, res) => {
     }
   });
 });
+
 router.post('/', (req, res) => {
   const newFood = req.body;
   foodController.createFood(newFood, (err, food) => {
